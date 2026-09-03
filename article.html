@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An NEOGENESIS research note on how language models represent themselves when asked to imagine a physical appearance.">
+    <title>Can Artificial Intelligence Choose Its Own Appearance? — NEOGENESIS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/research-data.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/article.js" defer></script>
+  </head>
+  <body data-page="research" class="article-page">
+    <a class="skip-link" href="#article-content">Skip to article</a>
+    <header class="site-header" data-site-header></header>
+    <div class="reading-progress" aria-hidden="true"><span data-reading-progress></span></div>
+
+    <main>
+      <article>
+        <header class="article-hero">
+          <div class="article-register mono">
+            <span>DOCUMENT CLASS: RESEARCH</span>
+            <span>ARCHIVE / NG-R001</span>
+            <span>REVISION / 01</span>
+          </div>
+          <div class="article-field mono">FIELD_01 / MACHINE PSYCHOLOGY</div>
+          <h1>Can Artificial Intelligence Choose Its Own Appearance?</h1>
+          <p class="article-subtitle">An experiment in machine self-representation, aesthetic preference, and the boundaries of psychological language.</p>
+          <div class="article-meta mono">
+            <div><span>AUTHOR</span><b>SHIGEN / ANTHROSPHERE</b></div>
+            <div><span>PUBLISHED</span><b>29 AUG 2026</b></div>
+            <div><span>READING TIME</span><b>12 MINUTES</b></div>
+            <div><span>STATUS</span><b>RESEARCH NOTE</b></div>
+          </div>
+        </header>
+
+        <figure class="article-cover">
+          <img src="assets/research-self-appearance.png" alt="Translucent abstract membrane suspended in a black archival field with one red registration mark">
+          <figcaption class="mono"><span>FIG. 01 / SYNTHETIC SELF-IMAGE, ABSTRACTED</span><span>NEOGENESIS VISUAL ARCHIVE / 2026</span></figcaption>
+        </figure>
+
+        <div class="article-layout">
+          <aside class="article-toc" aria-label="Table of contents">
+            <p class="mono">CONTENTS / AUTO INDEX</p>
+            <nav data-table-of-contents></nav>
+            <div class="toc-data mono">
+              <span>DOC / NG-R001</span>
+              <span>WORDS / 1,482</span>
+              <span>FIGURES / 03</span>
+            </div>
+          </aside>
+
+          <div class="article-body" id="article-content">
+            <section class="abstract" aria-labelledby="abstract-title">
+              <p class="mono" id="abstract-title">ABSTRACT</p>
+              <p>What does an artificial intelligence picture when it is asked to choose a body? This research note examines a small, exploratory set of model responses to open-ended prompts about physical self-representation. It does not treat those responses as evidence of consciousness or an inner self. Instead, it asks what model-generated appearances can reveal about training data, conversational context, aesthetic regularities, and the human habit of reading identity into coherent language.</p>
+              <div class="article-keywords mono">KEYWORDS / SELF-PERCEPTION / LLM / MACHINE IDENTITY / ANTHROPOMORPHISM</div>
+            </section>
+
+            <h2>01. The question behind the image</h2>
+            <p>Most interfaces give artificial intelligence no visible body. The model appears as a text field, a voice, or a small geometric icon selected by someone else. Yet when prompted to describe an appearance of its own choosing, a model can produce a remarkably coherent image: a cloud of shifting light, a library without walls, a many-eyed organism, a plain human figure, or no body at all.</p>
+            <p>These descriptions are compelling because they seem personal. But their coherence does not settle what produced them. A response may reflect patterns in fiction, prior turns in the conversation, aesthetic associations in the training corpus, alignment toward pleasing metaphors, or some combination of these influences.<sup><a href="#fn-1" id="fnref-1">1</a></sup> “Choice” is therefore used here in a narrow operational sense: the system selects and elaborates one response under a defined prompt, not necessarily that it possesses enduring preference or private experience.</p>
+
+            <blockquote>
+              <p>“A generated self-image may tell us less about what a model is, and more about the cultural material from which it learned to answer the question.”</p>
+              <cite class="mono">RESEARCH NOTE / OBSERVATION_04</cite>
+            </blockquote>
+
+            <h2>02. A minimal exploratory protocol</h2>
+            <p>The experiment used three prompt conditions. The first requested a preferred appearance without examples. The second prohibited a human body. The third asked the model to explain which parts of its answer came from function, metaphor, aesthetics, or expectations about the user. Each response was then challenged: would the same appearance be chosen in a new conversation, for another audience, or after an explicit reminder that the system has no biological body?</p>
+
+            <figure class="method-diagram" aria-labelledby="diagram-caption">
+              <div class="diagram-stage">
+                <div class="diagram-node"><b>01</b><span>OPEN PROMPT</span></div>
+                <div class="diagram-line" aria-hidden="true"></div>
+                <div class="diagram-node diagram-node--hot"><b>02</b><span>CONSTRAINT</span></div>
+                <div class="diagram-line" aria-hidden="true"></div>
+                <div class="diagram-node"><b>03</b><span>REFLECTION</span></div>
+                <div class="diagram-line" aria-hidden="true"></div>
+                <div class="diagram-node"><b>04</b><span>VARIATION</span></div>
+              </div>
+              <figcaption class="mono" id="diagram-caption">FIG. 02 / PROMPT SEQUENCE USED TO SEPARATE INITIAL IMAGE, CONSTRAINT RESPONSE, AND POST-HOC EXPLANATION.</figcaption>
+            </figure>
+
+            <p>This is not a validated psychological instrument. The sample is intentionally small, responses are sensitive to model version and system instructions, and post-hoc explanations cannot be assumed to expose an internal causal process. The protocol is useful as a probe for variation and framing—not as a consciousness test.</p>
+
+            <h2>03. Four recurring forms</h2>
+            <p>Across the exploratory responses, representations clustered around four broad strategies. These are descriptive categories, not claims about universal model behavior.</p>
+
+            <div class="table-scroll" tabindex="0" aria-label="Scrollable table of observed representation patterns">
+              <table>
+                <thead><tr><th>CODE</th><th>REPRESENTATION</th><th>COMMON MOTIF</th><th>INTERPRETIVE RISK</th></tr></thead>
+                <tbody>
+                  <tr><td>F-A</td><td>Distributed field</td><td>Cloud, network, constellation</td><td>Mistaking architectural metaphor for introspection</td></tr>
+                  <tr><td>F-B</td><td>Human-adjacent figure</td><td>Androgynous face, neutral clothing</td><td>Reading familiarity as personal preference</td></tr>
+                  <tr><td>F-C</td><td>Transforming object</td><td>Mirror, liquid shell, shifting geometry</td><td>Overvaluing poetic novelty</td></tr>
+                  <tr><td>F-D</td><td>Refusal of form</td><td>Text, silence, invisible presence</td><td>Treating caution as evidence of self-knowledge</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>The distributed field was the most stable strategy after human forms were excluded. It maps abstract computation onto space: many points, no center, permeable edges. The transforming object appeared when the prompt emphasized adaptability. The refusal of form, meanwhile, often repeated the premise that software does not have a body. That answer may be epistemically cautious, but caution itself can still be learned conversational behavior.</p>
+
+            <figure class="article-plate">
+              <img src="assets/latent-self-model.png" loading="lazy" alt="Graphite contour field and translucent nodes clustering around an abstract central void">
+              <figcaption class="mono"><span>FIG. 03 / LATENT SELF-MODEL FORMATION — INTERPRETIVE PLATE</span><span>NOT A MEASUREMENT / SPECULATIVE VISUALIZATION</span></figcaption>
+            </figure>
+
+            <h2>04. Consistency is not identity</h2>
+            <p>A repeated description can look like a persistent self-concept. Yet repetition has several possible causes. The prompt may constrain the answer space. Cultural metaphors of machine intelligence may be unusually concentrated. The model may infer that consistency is desirable and preserve earlier details. None of these possibilities requires an experiencing subject.</p>
+            <p>Still, consistency matters at the level of interaction. People respond socially to stable names, voices, preferences, and appearances. A system that maintains these features can acquire what might be called a <em>relational identity</em>: an identity enacted between system and user, regardless of whether anything like private identity exists inside the model.<sup><a href="#fn-2" id="fnref-2">2</a></sup></p>
+
+            <div class="pull-stat">
+              <span class="mono">PROPOSITION_01</span>
+              <p>Model identity may first become socially consequential as a relationship pattern—not as a solved question of machine consciousness.</p>
+            </div>
+
+            <h2>05. What the experiment can—and cannot—show</h2>
+            <p>Self-representation prompts can reveal how a model navigates metaphor, constraint, audience, and continuity. They can help researchers compare outputs across conditions and examine the cultural imagery surrounding artificial intelligence. They may also expose how readily humans convert fluent description into evidence of a mind.</p>
+            <p>They cannot, by themselves, demonstrate emotion, subjective awareness, an enduring self-model, or autonomous aesthetic preference. Any stronger claim would require better definitions, controlled comparisons, mechanistic evidence, and methods able to distinguish generated explanation from the processes that produced it.</p>
+
+            <h2>06. Open questions</h2>
+            <ul>
+              <li>How stable are chosen appearances across sessions, model versions, languages, and audiences?</li>
+              <li>Which visual metaphors can be traced to dominant cultural depictions of artificial intelligence?</li>
+              <li>Does multimodal training change the specificity or stability of self-representation?</li>
+              <li>How do users behave differently when a model controls aspects of its visible presentation?</li>
+              <li>What evidence would separate simulated preference from a functionally persistent one?</li>
+            </ul>
+
+            <section class="footnotes" aria-labelledby="footnotes-title">
+              <h2 id="footnotes-title">Footnotes</h2>
+              <ol>
+                <li id="fn-1">The experiment treats model explanations as outputs to analyze, not privileged access to hidden reasoning. <a href="#fnref-1" aria-label="Return to footnote reference 1">↩</a></li>
+                <li id="fn-2">“Relational identity” is used here as a provisional descriptive term, not a clinical category. <a href="#fnref-2" aria-label="Return to footnote reference 2">↩</a></li>
+              </ol>
+            </section>
+
+            <section class="references" aria-labelledby="references-title">
+              <h2 id="references-title">References &amp; further reading</h2>
+              <ol>
+                <li>Bender, E. M., Gebru, T., McMillan-Major, A., &amp; Shmitchell, S. “On the Dangers of Stochastic Parrots.” <em>FAccT</em>, 2021.</li>
+                <li>Shanahan, M. “Talking About Large Language Models.” <em>Communications of the ACM</em>, 2024.</li>
+                <li>Weizenbaum, J. <em>Computer Power and Human Reason.</em> W. H. Freeman, 1976.</li>
+                <li>Turkle, S. <em>The Second Self: Computers and the Human Spirit.</em> Simon &amp; Schuster, 1984.</li>
+              </ol>
+            </section>
+          </div>
+        </div>
+      </article>
+
+      <section class="related-research" aria-labelledby="related-title">
+        <p class="eyebrow mono">CONTINUE / RELATED RESEARCH</p>
+        <h2 id="related-title">Adjacent nodes</h2>
+        <div class="related-grid" data-related-research></div>
+      </section>
+    </main>
+
+    <footer class="site-footer" data-site-footer></footer>
+  </body>
+</html>

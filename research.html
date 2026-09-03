@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Search and filter the NEOGENESIS research database across machine psychology, AI, speculative culture, and AnthroSphere experiments.">
+    <title>Research Database — NEOGENESIS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/research-data.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/research.js" defer></script>
+  </head>
+  <body data-page="research">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header" data-site-header></header>
+
+    <main id="main-content">
+      <header class="page-mast page-mast--database">
+        <div class="page-code mono">SYSTEM / NEOGENESIS<br>NODE / ARCHIVE DATABASE<br>ACCESS / PUBLIC</div>
+        <div>
+          <p class="eyebrow mono">INDEX_003 / COMPLETE RECORDS</p>
+          <h1>Research<br>database<span>.</span></h1>
+        </div>
+        <p class="page-lead">Documents, working papers, speculative essays, and experimental notes on intelligence and the human systems forming around it.</p>
+      </header>
+
+      <section class="database" aria-label="Research database controls and results">
+        <div class="database-controls">
+          <div class="filter-tabs" role="group" aria-label="Filter by research field">
+            <button type="button" class="is-active" data-field="all">ALL <span>08</span></button>
+            <button type="button" data-field="machine-psychology">MACHINE PSYCHOLOGY <span>03</span></button>
+            <button type="button" data-field="artificial-intelligence">ARTIFICIAL INTELLIGENCE <span>01</span></button>
+            <button type="button" data-field="new-god-new-world">NEW GOD / NEW WORLD <span>03</span></button>
+            <button type="button" data-field="anthrosphere-lab">ANTHROSPHERE LAB <span>01</span></button>
+          </div>
+          <div class="search-row">
+            <label class="database-search">
+              <span class="mono">KEYWORD QUERY</span>
+              <input type="search" data-research-search placeholder="Search title, abstract, ID…" autocomplete="off">
+            </label>
+            <label class="select-wrap">
+              <span class="mono">TAG FILTER</span>
+              <select data-tag-filter><option value="all">ALL TAGS</option></select>
+            </label>
+            <label class="select-wrap">
+              <span class="mono">ORDER</span>
+              <select data-sort>
+                <option value="newest">NEWEST FIRST</option>
+                <option value="oldest">OLDEST FIRST</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="database-summary mono" aria-live="polite">
+          <span data-result-count>08 DOCUMENTS FOUND</span>
+          <button type="button" data-clear-filters>CLEAR FILTERS ×</button>
+        </div>
+        <div class="database-results" data-research-results></div>
+      </section>
+    </main>
+
+    <footer class="site-footer" data-site-footer></footer>
+  </body>
+</html>
