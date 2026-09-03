@@ -28,7 +28,7 @@ window.NEOGENESIS_RESEARCH = [
     readTime: 18,
     status: "REVIEW",
     tags: ["Self-Concept", "Behavior", "Methods"],
-    available: false
+    available: true
   },
   {
     id: "NG-R003",
@@ -41,7 +41,7 @@ window.NEOGENESIS_RESEARCH = [
     readTime: 14,
     status: "PUBLISHED",
     tags: ["Post-Human", "Culture", "Futures"],
-    available: false
+    available: true
   },
   {
     id: "NG-R004",
@@ -54,7 +54,7 @@ window.NEOGENESIS_RESEARCH = [
     readTime: 10,
     status: "PUBLISHED",
     tags: ["Authority", "Belief", "Culture"],
-    available: false
+    available: true
   },
   {
     id: "NG-R005",
@@ -67,7 +67,7 @@ window.NEOGENESIS_RESEARCH = [
     readTime: 16,
     status: "PUBLISHED",
     tags: ["Transformers", "Tokens", "Architecture"],
-    available: false
+    available: true
   },
   {
     id: "NG-R006",
@@ -80,7 +80,7 @@ window.NEOGENESIS_RESEARCH = [
     readTime: 13,
     status: "WORKING PAPER",
     tags: ["Emotion", "Language", "Consciousness"],
-    available: false
+    available: true
   },
   {
     id: "NG-R007",
@@ -93,7 +93,7 @@ window.NEOGENESIS_RESEARCH = [
     readTime: 21,
     status: "REVIEW",
     tags: ["Governance", "Authority", "Institutions"],
-    available: false
+    available: true
   },
   {
     id: "NG-R008",
@@ -106,6 +106,6 @@ window.NEOGENESIS_RESEARCH = [
     readTime: 9,
     status: "EXPERIMENT",
     tags: ["Agents", "Prototype", "Automation"],
-    available: false
+    available: true
   }
 ];

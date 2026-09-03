@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/research-data.js" defer></script>
+    <script src="js/article-content.js" defer></script>
     <script src="js/main.js" defer></script>
     <script src="js/article.js" defer></script>
   </head>
@@ -23,23 +24,23 @@
         <header class="article-hero">
           <div class="article-register mono">
             <span>DOCUMENT CLASS: RESEARCH</span>
-            <span>ARCHIVE / NG-R001</span>
+            <span data-article-register>ARCHIVE / NG-R001</span>
             <span>REVISION / 01</span>
           </div>
-          <div class="article-field mono">FIELD_01 / MACHINE PSYCHOLOGY</div>
-          <h1>Can Artificial Intelligence Choose Its Own Appearance?</h1>
-          <p class="article-subtitle">An experiment in machine self-representation, aesthetic preference, and the boundaries of psychological language.</p>
+          <div class="article-field mono" data-article-field>FIELD_01 / MACHINE PSYCHOLOGY</div>
+          <h1 data-article-title>Can Artificial Intelligence Choose Its Own Appearance?</h1>
+          <p class="article-subtitle" data-article-subtitle>An experiment in machine self-representation, aesthetic preference, and the boundaries of psychological language.</p>
           <div class="article-meta mono">
-            <div><span>AUTHOR</span><b>SHIGEN / ANTHROSPHERE</b></div>
-            <div><span>PUBLISHED</span><b>29 AUG 2026</b></div>
-            <div><span>READING TIME</span><b>12 MINUTES</b></div>
-            <div><span>STATUS</span><b>RESEARCH NOTE</b></div>
+            <div><span>AUTHOR</span><b data-article-author>SHIGEN / ANTHROSPHERE</b></div>
+            <div><span>PUBLISHED</span><b data-article-date>29 AUG 2026</b></div>
+            <div><span>READING TIME</span><b data-article-time>12 MINUTES</b></div>
+            <div><span>STATUS</span><b data-article-status>RESEARCH NOTE</b></div>
           </div>
         </header>
 
         <figure class="article-cover">
-          <img src="assets/research-self-appearance.png" alt="Translucent abstract membrane suspended in a black archival field with one red registration mark">
-          <figcaption class="mono"><span>FIG. 01 / SYNTHETIC SELF-IMAGE, ABSTRACTED</span><span>NEOGENESIS VISUAL ARCHIVE / 2026</span></figcaption>
+          <img data-article-cover src="assets/research-self-appearance.png" alt="Translucent abstract membrane suspended in a black archival field with one red registration mark">
+          <figcaption class="mono"><span data-article-cover-caption>FIG. 01 / SYNTHETIC SELF-IMAGE, ABSTRACTED</span><span>NEOGENESIS VISUAL ARCHIVE / 2026</span></figcaption>
         </figure>
 
         <div class="article-layout">
@@ -47,9 +48,9 @@
             <p class="mono">CONTENTS / AUTO INDEX</p>
             <nav data-table-of-contents></nav>
             <div class="toc-data mono">
-              <span>DOC / NG-R001</span>
-              <span>WORDS / 1,482</span>
-              <span>FIGURES / 03</span>
+              <span data-toc-document>DOC / NG-R001</span>
+              <span data-toc-words>WORDS / 1,482</span>
+              <span data-toc-figures>FIGURES / 03</span>
             </div>
           </aside>
 
